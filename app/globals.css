@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f6f3ea;
+  color: #152a1e;
+}
+
+/* subtle leaf-grain texture used behind the hero */
+.grain-overlay {
+  background-image: radial-gradient(
+      rgba(255, 255, 255, 0.5) 1px,
+      transparent 1px
+    ),
+    radial-gradient(rgba(255, 255, 255, 0.35) 1px, transparent 1px);
+  background-size: 3px 3px, 5px 5px;
+  background-position: 0 0, 2px 2px;
+}
+
+.phone-frame {
+  aspect-ratio: 9 / 19.5;
+}
+
+::selection {
+  background-color: #274327;
+  color: #f6f3ea;
+}
+.salus-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.step-img-box {
+  position: relative;
+}
+
+.step-img-box::before,
+.step-img-box::after {
+  content: "";
+  display: block;
+  border-radius: 20%;
+  position: absolute;
+top: 55.3%;   /* up a bit */
+  left: 61.5%;
+  transform: translate(-50%, -50%);
+}
+
+.step-img-box::before {
+  width: 80%;
+  /* height: 60%; */
+
+  /* 60% of parent's width */
+  padding-bottom: 60%;
+
+  background-color: #e8ede0;
+  z-index: -2;
+}
+
+.step-img-box::after {
+  width: 45%;
+  padding-bottom: 45%;
+  background-color: #e8ede0;
+;
+  z-index: -1;
+}
+.blob-shape {
+  border-radius: 42% 58% 65% 35% / 45% 45% 55% 55%;
+}
