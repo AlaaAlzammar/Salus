@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { fadeUp, staggerContainer, viewport } from "@/lib/motion";
+import { fadeUp, staggerContainer, viewport } from "@/lib/motion"
 
 const features = [
   {
@@ -87,7 +87,7 @@ export default function Features() {
         whileInView="visible"
         viewport={viewport}
         variants={staggerContainer(0.1)}
-        className="mx-auto grid max-w-8xl grid-cols-2 gap-y-12 px-6 py-6 md:grid-cols-4 md:gap-10 md:px-10 md:py-10"
+        className="mx-auto grid max-w-8xl grid-cols-2 gap-y-12 px-6 py-6 md:grid-cols-4 md:gap-10 md:px-10 md:py-7"
       >
         {features.map((f) => (
           <motion.div

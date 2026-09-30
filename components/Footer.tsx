@@ -22,20 +22,12 @@ export default function Footer() {
         whileInView="visible"
         viewport={viewport}
         variants={fadeUp(18)}
-        className="mx-auto max-w-8xl px-6 py-14 md:px-10"
+        className="mx-auto max-w-8xl px-6 pt-14 pb-4 md:px-10"
       >
         <div className="grid gap-10 md:grid-cols-[2fr_1fr_1fr_auto]">
           <div>
             <div className="flex items-center gap-2">
-              <svg width="26" height="26" viewBox="0 0 30 30" fill="none">
-                <path
-                  d="M15 2C9 6 6 11 6 16.5C6 22.3 10.1 27 15 27C19.9 27 24 22.3 24 16.5C24 15.8 23.9 15.1 23.8 14.5C21 15.3 18.1 14.6 16 12.5C14.9 11.4 14.2 10 14 8.5C13.3 9.7 13 11.1 13 12.5C13 14.4 13.7 16.1 15 17.4"
-                  stroke="#152A1E"
-                  strokeWidth="1.8"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
+              <img src="/logos/salus-logo.svg" className="w-8"/>
               <span className="text-lg font-bold text-moss-800">SALUS</span>
             </div>
             <p className="mt-4 text-xs text-moss-500">

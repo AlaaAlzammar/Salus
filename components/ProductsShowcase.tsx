@@ -42,26 +42,14 @@ export default function ProductsShowcase() {
   return (
     <section id="ForUsers" className="relative overflow-hidden bg-cream">
       <div className="mx-auto max-w-7xl px-6 lg:px-10 py-20 grid lg:grid-cols-2 gap-16 items-center">
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={viewport}
-          variants={revealImage()}
-          className="relative order-1 lg:order-1 flex justify-center"
-        >
-          <img
-            src="/images/salus_phone2.png"
-            alt="تطبيق SALUS على الهاتف بين يدي مستخدم"
-            className="w-full h-auto"
-          />
-        </motion.div>
+       
 
         <motion.div
           initial="hidden"
           whileInView="visible"
           viewport={viewport}
           variants={staggerContainer(0.12)}
-          className="order-2 lg:order-2 text-right"
+          className="order-1 lg:order-1 text-right"
         >
           <motion.h2
             variants={fadeUp(24)}
@@ -101,11 +89,24 @@ export default function ProductsShowcase() {
           <motion.a
             variants={fadeUp(15)}
             href="#more"
-            className="inline-flex items-center gap-2 text-forest font-semibold underline underline-offset-4"
+            className="inline-flex items-center gap-2 text-forest font-semibold  underline-offset-4"
           >
             اكتشف المزيد
             <ArrowLeft className="w-4 h-4 rotate-180" />
           </motion.a>
+        </motion.div>
+         <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={viewport}
+          variants={revealImage()}
+          className="relative order-2 lg:order-2 flex justify-center"
+        >
+          <img
+            src="/images/salus_phone2.png"
+            alt="تطبيق SALUS على الهاتف بين يدي مستخدم"
+            className="w-full h-auto"
+          />
         </motion.div>
       </div>
     </section>

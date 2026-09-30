@@ -51,7 +51,7 @@ export default function Navbar({
           mx-auto flex max-w-8xl items-center justify-between px-6
           md:px-10
           transition-all duration-300 ease-in-out
-          ${scrolled ? "py-5" : "py-3"}
+          ${scrolled ? "py-3" : "py-4"}
         `}
       >
         {/* Logo */}

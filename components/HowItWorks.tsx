@@ -28,7 +28,7 @@ const steps = [
     icon: Wallet,
     title: "اختر طريقة الدفع",
     text: "ادفع بالطريقة الأنسب لك عبر وسائل الدفع الآمنة والمتعددة.",
-    image: "/images/step-2.png",
+    image: "/images/step-3.png",
     fit: "cover",
   },
   {
