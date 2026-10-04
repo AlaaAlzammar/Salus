@@ -1,13 +1,13 @@
-import Hero from "@/components/Hero";
-import Features from "@/components/Features";
-import ProductsShowcase from "@/components/ProductsShowcase";
-import BusinessSection from "@/components/BusinessSection";
-import StatsBanner from "@/components/StatsBanner";
-import Newsletter from "@/components/Newsletter";
-import Footer from "@/components/Footer";
-import HowItWorks from "@/components/HowItWorks";
-import Section from "@/components/Section";
-import CtaBanner from "@/components/CtaBanner";
+import Hero from "@/components/Landing/Hero";
+import Features from "@/components/Landing/Features";
+import ProductsShowcase from "@/components/Landing/ProductsShowcase";
+import BusinessSection from "@/components/Landing/BusinessSection";
+import StatsBanner from "@/components/Landing/StatsBanner";
+import Newsletter from "@/components/Landing/Newsletter";
+import Footer from "@/components/Landing/Footer";
+import HowItWorks from "@/components/Landing/HowItWorks";
+import Section from "@/components/Landing/Section";
+import CtaBanner from "@/components/Landing/CtaBanner";
 
 export default function Home() {
   return (

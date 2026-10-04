@@ -43,7 +43,7 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section id="HowItWorks" dir="rtl" className="bg-cream py-20 lg:py-28">
+    <section id="HowItWorks" dir="rtl" className="bg-cream py-20 lg:py-20">
       <div className="mx-auto max-w-5xl px-6 lg:px-10">
         {/* Header */}
         <motion.header
@@ -51,7 +51,7 @@ export default function HowItWorks() {
           whileInView="visible"
           viewport={viewport}
           variants={fadeUp(20)}
-          className="mb-14 text-center lg:mb-20"
+          className="mb-14 text-center lg:mb-10"
         >
           <p className="mb-3 text-xs text-[#A38F5B]">خطوات بسيطة</p>
           <h2 className="font-display text-4xl lg:text-5xl font-semibold text-ink mb-4 leading-snug">

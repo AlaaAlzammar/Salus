@@ -6,7 +6,7 @@ import { fadeIn, fadeUp, revealImage, staggerContainer, viewport } from "@/lib/m
 
 export default function BusinessSection() {
   return (
-    <section dir="rtl" className="relative overflow-hidden  bg-moss-700">
+    <section dir="rtl" id="ForPharmacist" className="relative overflow-hidden  bg-moss-700">
       {/* Full-width background photo */}
       <motion.img
         initial="hidden"

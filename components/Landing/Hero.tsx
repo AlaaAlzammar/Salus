@@ -1,6 +1,6 @@
 "use client";
 
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/Landing/Navbar";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { EASE, fadeUp } from "@/lib/motion"
