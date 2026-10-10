@@ -1,11 +1,13 @@
 "use client";
 
+
 import { content } from "./content";
 import Field from "./Field";
 import { MailIcon } from "./icons";
 import NoticeDialog from "./NoticeDialog"
 import PasswordField from "./PasswordField";
 import { useLoginForm } from "./useLoginForm";
+import Link from "next/link";
 
 const errorFor = (hasError: boolean, message: string) =>
   hasError ? message : "";
@@ -16,7 +18,7 @@ export default function LoginForm() {
 
   return (
     <>
-      <form onSubmit={handleSubmit} noValidate>
+      <form onSubmit={handleSubmit} noValidate className="login-form">
         <Field
           id="email"
           label={content.email}
@@ -42,10 +44,10 @@ export default function LoginForm() {
           error={errorFor(invalid.password, content.errors.password)}
         />
 
-        <div className="recovery-row">
+        <div className="recovery-row mb-2">
           <button
             type="button"
-            className="text-button"
+            className="text-button mb-2"
             onClick={() => openNotice("reset")}
           >
             {content.forgot}
@@ -55,17 +57,12 @@ export default function LoginForm() {
         <button className="primary" type="submit">
           <span>{content.signin}</span>
         </button>
-
-        <p className="signup">
-          <span>{content.newToSalus}</span>{" "}
-          <button
-            type="button"
-            className="text-button"
-            onClick={() => openNotice("signup")}
-          >
-            {content.create}
-          </button>
-        </p>
+       <Link href="/auth/signUp" className="signup">
+  <span>{content.newToSalus}</span>{" "}
+  <span className="text-button bg-moss-700">
+    {content.create}
+  </span>
+</Link>
       </form>
 
       <NoticeDialog

@@ -71,3 +71,8 @@ top: 55.3%;   /* up a bit */
 .blob-shape {
   border-radius: 42% 58% 65% 35% / 45% 45% 55% 55%;
 }
+@layer components {
+  .page-x {
+    @apply px-6 md:px-14;
+  }
+}

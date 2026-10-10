@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { fadeUp, staggerContainer, viewport } from "@/lib/motion"
+import { fadeUp, staggerContainer, viewport } from "@/lib/motion";
 
 const features = [
   {
@@ -39,7 +39,7 @@ const features = [
   },
   {
     title: "توصيل سريع",
-    desc: "إلي باب منزلك في الوقت المناسب.",
+    desc: "إلى باب منزلك في الوقت المناسب.",
     icon: (
       <>
         <path
@@ -81,29 +81,29 @@ const features = [
 
 export default function Features() {
   return (
-    <section className="bg-[#FAF9F3]">
+    <section className="bg-[#E8EFE5]">
       <motion.div
         initial="hidden"
         whileInView="visible"
         viewport={viewport}
         variants={staggerContainer(0.1)}
-        className="mx-auto grid max-w-8xl grid-cols-2 gap-y-12 px-6 py-6 md:grid-cols-4 md:gap-10 md:px-10 md:py-7"
+        className="mx-auto grid max-w-7xl grid-cols-2 gap-y-12 py-10 md:grid-cols-4 md:gap-10 page-x md:py-14"
       >
         {features.map((f) => (
           <motion.div
             key={f.title}
             variants={fadeUp(20)}
-            className="flex flex-col items-center text-center"
+            className="group flex flex-col items-center text-center"
           >
-            <div className="mb-5 grid h-14 w-14 place-items-center rounded-full bg-moss-100 text-moss-700">
+            <div className="mb-5 grid h-14 w-14 place-items-center rounded-full bg-moss-100 text-moss-700 ring-1 ring-transparent transition group-hover:ring-gold">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                 {f.icon}
               </svg>
             </div>
-            <h3 className="mb-2 text-base font-bold text-moss-800 md:text-lg">
+            <h3 className="mb-2 text-base font-bold text-moss-900 md:text-lg">
               {f.title}
             </h3>
-            <p className="max-w-[15rem] text-sm leading-6 text-moss-600">
+            <p className="max-w-[15rem] text-sm leading-6 text-moss-700/80">
               {f.desc}
             </p>
           </motion.div>

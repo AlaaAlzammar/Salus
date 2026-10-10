@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Tajawal } from "next/font/google";
+import { Almarai } from "next/font/google";
 import "./globals.css";
 
-const tajawal = Tajawal({
+const almarai = Almarai({
   subsets: ["arabic"],
-  weight: ["300", "400", "500", "700", "800"],
-  variable: "--font-tajawal",
+  weight: ["300", "400", "700", "800"],
+  variable: "--font-almarai",
 });
 
 export const metadata: Metadata = {
@@ -21,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ar" dir="rtl">
-      <body className={`${tajawal.variable} font-arabic antialiased`}>
+      <body className={`${almarai.variable} font-arabic bg-cream text-moss-900 antialiased`}>
         {children}
       </body>
     </html>
